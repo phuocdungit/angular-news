@@ -1,9 +1,9 @@
 'use strict';
 
-angular.module('phonecatApp').config(['$locationProvider', '$routeProvider',
+angular.module('news').config(['$locationProvider', '$routeProvider',
     function config($locationProvider, $routeProvider) {
         $routeProvider.when('/', {
-            template: '<home-page></home-page>'
+            templateUrl: '../views/homepage.html',
         }).when('/phones', {
             template: '<phone-list></phone-list>'
         }).when('/list/:type', {

@@ -1,4 +1,4 @@
-angular.module('phonecatApp').controller('ButtonGroup', ['$http', function ($http) {
+angular.module('news').controller('ButtonGroup', ['$http', function ($http) {
     this.AddToCart = function (id) {
         var detail = $http.get('phones/' + id + '.json').success(function (response) {
             var count = parseInt($('.cart_no').data('count'));
@@ -28,7 +28,7 @@ angular.module('phonecatApp').controller('ButtonGroup', ['$http', function ($htt
 
     };
 }]);
-angular.module('phonecatApp').controller('CartHome', ['$http', function ($http) {
+angular.module('news').controller('CartHome', ['$http', function ($http) {
     this.data = {};
     this.removeItemCart = function (event) {
         $(this.data).parents('.right').remove();

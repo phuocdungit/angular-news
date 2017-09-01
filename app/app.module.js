@@ -1,13 +1,13 @@
 'use strict';
 
-// Define the `phonecatApp` module
-angular.module('phonecatApp', [
+// Define the `news` module
+angular.module('news', [
     'ngAnimate',
     'ngRoute',
-    'core',
-    'phoneDetail',
-    'phoneList',
-    'productList',
-    'hotList',
-    'homePage'
+    // 'core',
+    // 'phoneDetail',
+    // 'phoneList',
+    // 'productList',
+    // 'hotList',
+    // 'homePage'
 ]);
