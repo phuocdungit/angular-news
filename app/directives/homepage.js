@@ -56,6 +56,20 @@
             controllerAs: "naturallist"
         };
     });
+    app.directive("gallery", function () {
+        return {
+            restrict: 'AE',
+            templateUrl: "../../views/gallery.html",
+            controller: ['$scope', '$element', '$timeout', '$http', function ($scope, $element, $timeout, $http) {
+                var item = this;
+                item.gallerys = [];
+                $http.get('../../data/gallery.json').success(function (data) {
+                    item.gallerys = data;
+                });
+            }],
+            controllerAs: "galleryllist"
+        };
+    });
 
     app.directive("homePage", function () {
         return {
