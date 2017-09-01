@@ -1,0 +1,48 @@
+<div class="col-md-6"
+     ng-repeat="vimeo in vimeoslist.videos | filter:{ source : Vimeo,highlights:true }| orderBy:date_creat | limitTo:1">
+    <div class="wrap-vid">
+        <div class="zoom-container">
+            <div class="zoom-caption">
+                <span class="vimeo">{{vimeo.source}}</span>
+                <a ng-href="{{vimeo.url}}">
+                    <i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+                </a>
+                <p>{{vimeo.title}}</p>
+            </div>
+            <img ng-src="{{vimeo.image}}">
+        </div>
+        <h3 class="vid-name"><a ng-href="{{vimeo.url}}">{{vimeo.title}}</a></h3>
+        <div class="info">
+            <h5>By <a href="#">{{vimeo.author}}</a></h5>
+            <span><i class="fa fa-calendar"></i>{{vimeo.date_creat}}</span>
+            <span><i class="fa fa-heart"></i>{{vimeo.like|number}}</span>
+        </div>
+    </div>
+    <p class="more">{{vimeo.content}}</p>
+</div>
+<div class="col-md-6"
+     ng-repeat="vimeo in vimeoslist.videos | filter:{ source : Vimeo }| orderBy:date_creat | limitTo:4">
+    <div class="post wrap-vid">
+        <div class="zoom-container">
+            <div class="zoom-caption">
+                <span class="vimeo">{{vimeo.source}}</span>
+                <a ng-href="{{vimeo.url}}">
+                    <i class="fa fa-play-circle-o fa-3x" style="color: #fff"></i>
+                </a>
+                <p>{{vimeo.title}}</p>
+            </div>
+            <img ng-src="{{vimeo.image}}">
+        </div>
+        <div class="wrapper">
+            <h5 class="vid-name"><a ng-href="{{vimeo.url}}">{{vimeo.title}}</a></h5>
+            <div class="info">
+                <h6>By <a href="#">{{vimeo.author}}</a></h6>
+                <span><i class="fa fa-heart"></i>{{vimeo.like}} / <i
+                        class="fa fa-calendar"></i>{{vimeo.date_creat}}</span>
+                <span class="rating">
+                    <i ng-repeat="i in [1,2,3,4,5]| limitTo:vimeo.star" class="fa fa-star"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>

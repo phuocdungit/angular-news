@@ -4,7 +4,7 @@
 angular.module('news', [
     'ngAnimate',
     'ngRoute',
-    // 'core',
+    // 'store-home',
     // 'phoneDetail',
     // 'phoneList',
     // 'productList',

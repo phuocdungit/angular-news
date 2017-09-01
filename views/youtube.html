@@ -1,0 +1,19 @@
+<div ng-repeat="video in videoslist.videos | filter:{ source : Youtube,highlights:true }| orderBy:date_creat | limitTo:1">
+    <div class="zoom-container">
+        <div class="zoom-caption">
+            <span class="youtube">{{video.source}}</span>
+            <a ng-href="{{video.url}}">
+                <i class="fa fa-play icon-play" style="color: #fff"></i>
+            </a>
+            <p>{{video.title}}</p>
+        </div>
+        <img ng-src="{{video.image}}">
+    </div>
+    <h3 class="vid-name"><a ng-href="{{video.url}}">{{video.title}}</a></h3>
+    <div class="info">
+        <h5>By <a href="#">{{video.author}}</a></h5>
+        <span><i class="fa fa-calendar"></i>{{video.date_creat}}</span>
+        <span><i class="fa fa-heart"></i>{{video.like|number}}</span>
+    </div>
+    <p class="more">{{video.content}}</p>
+</div>

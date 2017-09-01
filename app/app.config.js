@@ -3,7 +3,7 @@
 angular.module('news').config(['$locationProvider', '$routeProvider',
     function config($locationProvider, $routeProvider) {
         $routeProvider.when('/', {
-            templateUrl: '../views/homepage.html',
+            template: '<home-page></home-page>'
         }).when('/phones', {
             template: '<phone-list></phone-list>'
         }).when('/list/:type', {

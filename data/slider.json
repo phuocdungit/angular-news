@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "image": "../assets/img/1.jpg",
+    "title": "Aenean feugiat in ante et 1",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  },
+  {
+    "id": 2,
+    "image": "../assets/img/2.jpg",
+    "title": "Aenean feugiat in ante et 2",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  },
+  {
+    "id": 3,
+    "image": "../assets/img/3.jpg",
+    "title": "Aenean feugiat in ante et 3",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  }
+]
