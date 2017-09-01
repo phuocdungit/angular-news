@@ -1,0 +1,68 @@
+.ng-invalid.ng-dirty {
+  border-color: #FA787E;
+}
+
+.ng-valid.ng-dirty {
+  border-color: #78FA89;
+}
+#sequence {
+  float: left;
+  width: 100%;
+  position: relative;
+  color: #fff;
+  height: 452px;
+  width: 100%;
+  overflow: hidden;
+  min-height: 100px;
+  margin: 15px 0 0 0;
+}
+.thumbnail{border: none}
+.thumbnail {
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+.sorter {
+  float: left;
+  width: 100%;
+}
+.sort-by, .limiter{
+  float: right;
+}
+.productname{height: 30px}
+.search{float: left}
+.sorter .search input {
+  padding: 6px;
+  border: 1px solid #e7e7e7;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  margin-left: 10px;
+  color: #f7544a;
+  min-width: 60px;
+}
+#Reviews .namefild, #Reviews .emailfild{padding-left: 10px}
+.option-cart-item{
+  max-height: 400px;
+  overflow-y: scroll;
+  width: 280px;
+}
+[data-notify="progressbar"] {
+  margin-bottom: 0px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 5px;
+}
+.noti{
+  position: fixed;
+  right: 10px;
+  background: green;
+  color: white;
+  font-size: 20px;
+  padding: 10px 10px;
+  border-radius: 20px;
+  margin-top: 10px;
+  opacity: 0.7;
+  z-index:9999;
+  display: none;
+}
